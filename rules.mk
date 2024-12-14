@@ -89,13 +89,13 @@ SWAP_HANDS_ENABLE = no      # Enable one-hand typing
 #}}}
 ### ANIMATIONS_ENABLE {{{
 # And if you want to disable it without turning off the OLED Driver you can simply set
-OCEAN_DREAM_ENABLE = no
+OCEAN_DREAM_ENABLE = yes # slave
 LUNA_ENABLE = no
 BONGOCAT_ENABLE = no
-CRAB_ENABLE = yes # (default)
+CRAB_ENABLE = no # (default)
 DEMON_ENABLE = no
-DOG_ENABLE = yes # is smaller as LUNA_ENABLE (default)
-BONGOCAT_KEYBOARD_ENABLE = no # is smaller as BONGOCAT_ENABLE
+DOG_ENABLE = no # is smaller as LUNA_ENABLE (default)
+BONGOCAT_KEYBOARD_ENABLE = yes # master and smaller as BONGOCAT_ENABLE
 MUSIC_BARS_ENABLE = no # TODO
 ifeq ($(strip $(OLED_ENABLE)), yes)
   SRC += oled_setup.c
