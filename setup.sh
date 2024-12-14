@@ -65,7 +65,7 @@ has() {
 usage(){
 cat <<END
   Usage:
-    bash -c "$(curl -fsSL https://raw.githubusercontent.com/mctechnology17/qmk-config/main/setup.sh)"
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/digitalsunshine/fifi-oled/main/setup.sh)"
 END
   exit 1
 }
@@ -131,7 +131,7 @@ if [ "$setup_continue" = "y" ]; then # y {{{
   # ckeck if qmk-config dir exists
   if [ ! -d ~/qmk-config ]; then
     info 'Clone qmk-config to HOME'
-    git clone https://github.com/mctechnology17/qmk-config.git
+    git clone https://github.com/digitalsunshine/fifi-oled.git
     completed 'Done!'
   fi
   # check if qmk-config dir in qmk_firmware exists
